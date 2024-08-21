@@ -1,0 +1,100 @@
+main{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+#left{
+    width: 50%;
+    height: 80%;
+    
+    gap: 20px;
+}
+#product1{
+    width: 100%;
+    border-radius: 20px;
+}
+.miniproduct{
+    width: 20%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0;
+}
+.miniproduct:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    border:solid 2px orangered;
+
+}
+#sidsview{
+    display: flex;
+    justify-content: space-between;
+}
+#rightdiv{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+#price{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  h3{
+    margin: 0;
+  }
+  del{
+   color:gray ; 
+  }
+  #discound{
+    background-color: black;
+    color: aliceblue;
+    font-size: 12px ;
+    font-weight: 700;
+    border-radius: 6px;
+    box-sizing:border-box;
+    padding: 3px 6px ;
+  }
+  #quantity{
+    width: 120px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 5px;
+    gap: 10px;
+    background-color: lightgray;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+  }
+#cartend{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: orangered;
+    gap: 10px;
+    border: none;
+    border-radius: 10px;
+}
+#bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    align-items: center;
+  }
+  @media screen and (max-width: 375px) {
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    #left{
+        width: 100%;
+        height: auto;
+    }
+  }
